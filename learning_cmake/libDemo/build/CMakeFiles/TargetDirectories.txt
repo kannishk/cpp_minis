@@ -1,0 +1,3 @@
+/Users/kanishktiwari/Downloads/Dev/cpp_minis/learning_cmake/libDemo/build/CMakeFiles/mearlymath.dir
+/Users/kanishktiwari/Downloads/Dev/cpp_minis/learning_cmake/libDemo/build/CMakeFiles/edit_cache.dir
+/Users/kanishktiwari/Downloads/Dev/cpp_minis/learning_cmake/libDemo/build/CMakeFiles/rebuild_cache.dir
