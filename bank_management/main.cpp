@@ -103,7 +103,7 @@ class Transaction{
 
 class BankAccount{
     public:
-        BankAccount(const string &username, Database &db): username(username), balance(0), database(db){
+        BankAccount(const string &username, Database &db): username(username), open(true), balance(0), database(db){
             ifstream file("users.txt");
             string line;
             while(getline(file,line)){
@@ -262,9 +262,11 @@ int main(){
             cin >> choice;
 
             if(choice==1){
+                if(database.login()){
                 loggedIn = true;
                 username = username;
                 acc.setUserName(username);
+                }
             }else if(choice ==2){
                 string newUsername, password;
                 cout << "Enter new Username";
