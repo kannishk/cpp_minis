@@ -20,5 +20,10 @@ Song::Song(const char *t, const char *a){
 }
 
 void Song::Set(const char *t, const char *a){
-    
+    if(strlen(t)<MAX_CHARS){
+        strcpy_s(title,t);
+    }
+    if(strlen(a)<MAX_CHARS){
+        strcpy_s(artist,a);
+    }
 }

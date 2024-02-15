@@ -191,6 +191,33 @@ int main(){
             case 4:{
                 string name;
                 bool found = false;
+                cout << "\n\n\n Search \n";
+                cout << "\n Enter Book Name";
+                cin.ignore();
+                getline(cin, name);
+
+                int id = generateBookID(name);
+
+                for (int c = 0; c < 5;c++){
+                    int shelve = id % 10;
+
+                    struct BST *bst = searchBST(rack[shelve][c], id);
+
+                    if(bst!=nullptr){
+                        found = SearchingsearchBook(bst, name, c, shelve);
+                        break;
+                    }
+                }
+                if(!found){
+                    cout << "\n\nBook Not found";
+                }
+                break;
+            }
+
+            case 5: {
+                string book_name;
+                string author_name;
+                string username;
                 
             }
         }
